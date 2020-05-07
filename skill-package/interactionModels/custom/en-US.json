@@ -16,25 +16,30 @@
                     "samples": []
                 },
                 {
-                    "name": "HelloWorldIntent",
-                    "slots": [],
+                    "name": "SetFavoriteColorIntent",
+                    "slots": [
+                        {
+                            "name": "color_name",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
                     "samples": [
-                        "hello",
-                        "how are you",
-                        "say hi world",
-                        "say hi",
-                        "hi",
-                        "say hello world",
-                        "say hello"
+                        "My favorite color is {color_name}"
                     ]
                 },
                 {
                     "name": "AMAZON.NavigateHomeIntent",
                     "samples": []
+                },
+                {
+                    "name": "GetFavoriteColorIntent",
+                    "slots": [],
+                    "samples": [
+                        "what's my favorite color"
+                    ]
                 }
             ],
             "types": []
         }
     }
-  }
-  
+}
